@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar 1</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-950 text-gray-400 font-sans">
+
+  <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+    <div class="text-white font-bold text-xl">
+      AI Corp
+    </div>
+
+    <ul class="flex gap-8 text-gray-300">
+      <li><a href="#" class="hover:text-white">Home</a></li>
+      <li><a href="#" class="hover:text-white">Services</a></li>
+      <li><a href="#" class="hover:text-white">Pricing</a></li>
+      <li><a href="#" class="hover:text-white">Contact</a></li>
+    </ul>
+
+    <button class="px-5 py-2 rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition">
+      Login
+    </button>
+
+  </nav>
+
+</body>
+</html>
